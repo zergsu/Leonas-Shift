@@ -39,7 +39,8 @@ public class LatternGravity : MonoBehaviour
     }
 
     private void ResetGravity() {
-        if (SceneManager.GetActiveScene().buildIndex == 3) {
+        
+        if (SceneManager.GetActiveScene().buildIndex == 4) {
             for (int i = 0; i < 4 - rotateAmount; i++) {
                 world.transform.Rotate(0, 0, -90);
                 player.transform.Rotate(0, 0, 90);

@@ -27,7 +27,6 @@ public class MovingPlatform : MonoBehaviour
                 MovePlatform();
 			} else { transform.position = Vector2.MoveTowards(transform.position, points[0].position, speed * Time.deltaTime); }
 		}
-
         if (Input.GetKeyDown(KeyCode.LeftShift) && player != null) { // release from platform if player switched worlds
             player.transform.SetParent(null);
         }

@@ -9,7 +9,7 @@ public class CatManager : MonoBehaviour
     bool canDialog;
 
     private void Start() {
-        firstTime = true;
+        firstTime = false;
     }
 
 	private void Update() {
